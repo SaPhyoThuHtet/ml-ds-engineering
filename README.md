@@ -1,5 +1,8 @@
 # ml-ds-engineering
 
+### CI/CD
+Continuous Integration and Continuous Delivery (CI/CD) is a set of software development practices that aim to automate and streamline the process of building, testing, and delivering software. CI focuses on frequent code integration and automated testing, while CD extends this by automating the delivery and deployment of software changes. The goal is to achieve faster, more reliable, and consistent software releases through automation at various stages of the development lifecycle. CI/CD practices are crucial for modern software development, enhancing collaboration, reducing errors, and enabling rapid, high-quality releases.
+
 ###Toml
 pyproject.toml is a configuration file used in Python projects to define various aspects of the project, including build system settings, project metadata, and configuration for tools like linters and build systems. It's part of the PEP 518 standard, which introduces a standardized configuration file for Python projects.
 https://youtu.be/D_Jb52jw2HY?si=syq_jXqq7PT-Ku3p
