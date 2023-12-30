@@ -1,5 +1,8 @@
 # ml-ds-engineering
 
+### Deep Learning Concepts
+Gradient Descent: https://www.ibm.com/topics/gradient-descent#:~:text=Gradient%20descent%20is%20an%20optimization,each%20iteration%20of%20parameter%20updates.
+
 ### CI/CD
 Continuous Integration and Continuous Delivery (CI/CD) is a set of software development practices that aim to automate and streamline the process of building, testing, and delivering software. CI focuses on frequent code integration and automated testing, while CD extends this by automating the delivery and deployment of software changes. The goal is to achieve faster, more reliable, and consistent software releases through automation at various stages of the development lifecycle. CI/CD practices are crucial for modern software development, enhancing collaboration, reducing errors, and enabling rapid, high-quality releases.
 
