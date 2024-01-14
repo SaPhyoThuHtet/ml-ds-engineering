@@ -13,3 +13,58 @@ https://youtu.be/D_Jb52jw2HY?si=syq_jXqq7PT-Ku3p
 ### DVC (Data Version Control)
 DVC, or Data Version Control, is an open-source tool designed for version control and management of large files and datasets in machine learning (ML) and data science projects. Key features include data versioning, reproducibility, integration with Git, support for parallel and distributed execution, compatibility with various remote storage solutions, and an extensible, open-source nature. DVC allows ML practitioners to track and version datasets efficiently, ensuring reproducibility and collaboration in ML workflows.
 https://dvc.org/doc
+
+### *args vs **kwargs
+In Python, *args and **kwargs are used in function definitions to handle a variable number of arguments.
+
+*args:
+
+Stands for "arguments" and is used to pass a variable number of non-keyword (positional) arguments to a function.
+It collects extra positional arguments into a tuple.
+When defining a function, *args allows the function to accept any number of positional arguments.
+def example_function(arg1, arg2, *args):
+    print("arg1:", arg1)
+    print("arg2:", arg2)
+    print("Additional args:", args)
+
+example_function(1, 2, 3, 4, 5)
+# Output:
+# arg1: 1
+# arg2: 2
+# Additional args: (3, 4, 5)
+
+
+**kwargs:
+
+Stands for "keyword arguments" and is used to pass a variable number of keyword arguments to a function.
+It collects extra keyword arguments into a dictionary.
+When defining a function, **kwargs allows the function to accept any number of keyword arguments.
+
+def example_function(arg1, arg2, **kwargs):
+    print("arg1:", arg1)
+    print("arg2:", arg2)
+    print("Additional kwargs:", kwargs)
+
+example_function(1, 2, key1="value1", key2="value2")
+# Output:
+# arg1: 1
+# arg2: 2
+# Additional kwargs: {'key1': 'value1', 'key2': 'value2'}
+
+Combining *args and **kwargs:
+
+You can use both *args and **kwargs in a function definition to accept any combination of positional and keyword argument
+
+def example_function(arg1, arg2, *args, **kwargs):
+    print("arg1:", arg1)
+    print("arg2:", arg2)
+    print("Additional args:", args)
+    print("Additional kwargs:", kwargs)
+
+example_function(1, 2, 3, 4, key1="value1", key2="value2")
+# Output:
+# arg1: 1
+# arg2: 2
+# Additional args: (3, 4)
+# Additional kwargs: {'key1': 'value1', 'key2': 'value2'}
+
