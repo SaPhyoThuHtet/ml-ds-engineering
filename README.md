@@ -68,3 +68,30 @@ example_function(1, 2, 3, 4, key1="value1", key2="value2")
 # Additional args: (3, 4)
 # Additional kwargs: {'key1': 'value1', 'key2': 'value2'}
 
+### @classmethod decorator
+The @classmethod decorator in Python is used to define a class method. A class method is a method that is bound to the class and not the instance of the class. It takes the class as its first parameter (usually named cls) rather than an instance.
+
+Here's a simple example to illustrate the usage of @classmethod:
+class MyClass:
+    class_variable = "I am a class variable"
+
+    def __init__(self, instance_variable):
+        self.instance_variable = instance_variable
+
+    @classmethod
+    def class_method(cls):
+        print("This is a class method")
+        print(f"Accessing class variable: {cls.class_variable}")
+
+# Creating an instance of MyClass
+obj = MyClass("I am an instance variable")
+
+# Calling the class method on the class itself
+MyClass.class_method()
+
+# Output:
+# This is a class method
+# Accessing class variable: I am a class variable
+
+
+
