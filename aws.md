@@ -13,3 +13,17 @@ With Lambda, you upload your code (in the form of functions) and AWS takes care 
 Lambda automatically scales your code by running it in response to each event. You only pay for the compute time consumed by your code.
 Lambda is commonly used for event-driven applications, real-time file processing, data processing pipelines, and backend services for mobile and web applications.
 Unlike EC2, Lambda abstracts away server management, allowing developers to focus solely on writing code.
+
+To start with AWS Lambda: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/create-python-aws-lambda-function-hello-world-tutorial-serverless-how-to-example Sample Code :import json
+
+def lambda_handler(event, context):
+    # Retrieve the JSON body from the event
+    try:
+        event_body = json.loads(event['body'])
+        print("Received body:", event_body)
+    except KeyError:
+        print("No 'body' key found in the event")
+    except json.JSONDecodeError:
+        print("Error decoding JSON body")
+    except Exception as e:
+        print("Error:", e)
