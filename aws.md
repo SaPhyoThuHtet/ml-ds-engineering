@@ -25,5 +25,8 @@ def lambda_handler(event, context):
         print("No 'body' key found in the event")
     except json.JSONDecodeError:
         print("Error decoding JSON body")
+
     except Exception as e:
         print("Error:", e)
+
+Deploy Models on AWS: https://medium.com/@christopheradamson253/deploying-machine-learning-models-on-aws-a-guide-to-amazon-sagemaker-ca50717bb341
